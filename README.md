@@ -2,7 +2,7 @@
 
 > project contains AngularJS component which uploads video file to Wistia
 
-## Build Setup
+## Console commands
 
 ``` bash
 # install dependencies
