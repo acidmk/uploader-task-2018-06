@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h3 class="wu__title">Wistia uploader</h3>
+
+      <label ng-disabled="wuCtrl.state.uploading" class="btn btn-primary">
+        Upload file
+        <input id="fileupload" type="file" name="files[]" hidden>
+      </label>
+      <span>{{wuCtrl.state.statusMessage}}</span>
+
+      <div ng-show="wuCtrl.state.uploading" class="progress">
+        <div class="progress-bar bg-success" role="progressbar" ng-style="wuCtrl.state.progressStyle" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+
+      <div ng-if="wuCtrl.state.embeddedHash" ng-class="wuCtrl.state.embeddedHash" style="height:349px;width:620px">&nbsp;</div>
+    </div>
+  </div>
+</div>
